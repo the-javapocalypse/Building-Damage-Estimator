@@ -12,7 +12,7 @@ This folder contains script that will train the model using Transfer Learning (V
 * Preserved
 This should provide us a good starting point and set standards for base accuracy.
 
-### Version 3
+### Version 3 (Damage Estimator Low/Moderate/High)
 This folder contains script in which we will train a Convolutional Neural Network and substitute it with the final layer of VGG 16 to classify a given image on the basis of model confidence (probability) as:
 
 * Not Damaged/Irrelevant
