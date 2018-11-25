@@ -25,6 +25,19 @@ We will also compare different architectures to find the best hyper paramters fo
 In this folder, there are scripts which uses different techniques to extract information, like number of people killed, from textual data (tweets and captions). The results are not satisfactory, but however provided a bases for NLP part.
 
 
+### Version 5 (NN for Text)
+In this folder, we trained a simple ANN for Text Classification. The results provided decent accuracy on validation data.
+
+
+### Version 6 (CNN for Text)
+We Compared the results of following different networks, trained and tested using same data and parameters. The networks are mentioned in ascending order on the basis of their accuracy and genralization.
+* Simple ANN
+* CNN
+* CNN with Word Embeddings
+* CNN with Pre-trained Word Embeddings (GLOVE)
+The results for CNN with Pre-trained Word Embeddings were the best giving over 96% accurate results.
+
+
 ## Contribution
 
 If you are contributing to the image/text part:
