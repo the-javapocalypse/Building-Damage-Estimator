@@ -1,9 +1,8 @@
 # Building Damage Estimator
 
 
-## Brief Overview
+## Brief Overview of Data
 
-### Dataset
 Initially we had a dataset of Nepal earthquake which had 6,529 images and 6,867 tweets. There was a lot of irrelevant images in the dataset.
 
 Later, we separated images manually to train the model on data with minimum noise. This dataset had 420 training images and 80 testing images. But this data was subjective to our own thinking.
@@ -12,6 +11,8 @@ We then created a website to label this dataset which we manually created. The a
 ![enter image description here](https://ucarecdn.com/e0967bef-b95a-49d8-96c1-48f6084e0b54/datalabelwebsite.PNG)
 
 We later find two crisis datasets which were already labeled by humans via [Figure Eight](https://www.figure-eight.com/) (previously known as Crowd Flower). One dataset was used in paper ['Practical Extraction of Disaster-Relevant Information from Social Media'](https://arxiv.org/pdf/1805.00713.pdf) and second in ['Damage Assessment from Social Media Imagery Data During Disasters'](https://mimran.me/papers/Damage_assessment_from_Social_Media_Images.pdf)
+
+## Brief Overview of Progress
 
 ### Version 1 (Transfer Learning)
 
