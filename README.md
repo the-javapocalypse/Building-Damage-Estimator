@@ -4,6 +4,7 @@
 ## Brief Overview
 
 ### Version 1 (Transfer Learning)
+
 **Motivation**
 We needed a baseline to evaluate our future models. The best way to begin the project was setting a baseline through transfer learning.
 
@@ -62,6 +63,7 @@ First We evaluated 6 different models with slightly different architectures and 
 * Highly Damaged
 
 Following is the architecture of the model
+
 ![enter image description here](https://ucarecdn.com/d0ac312f-5e91-4363-9604-080dd4870d33/Bottleneck_features.png)
 
 Following were the best results out of the 6 models
@@ -73,6 +75,7 @@ Validation Results (Loss, Acc):
 When evaluating this model on new data which was not used for training or validation, it showed 91% accuracy.
 
 Then we created a new model by Fine Tuning VGG 16. We trained the model on same dataset. We used early stopping to ensure generalization in the model. Following is the architecture of Fine Tuned Model.
+
 ![enter image description here](https://ucarecdn.com/ee7b1ccb-043f-414a-907b-340841170ba2/Fine_Tuned.png)
 
 This model showed following accuracy during training
@@ -129,15 +132,51 @@ The previous approaches failed, so we went with ANN. At this moment we had human
 **Description**
 We trained a simple ANN for Text Classification. Following is the architecture of ANN used.
 
+![enter image description here](https://ucarecdn.com/42cd6fb3-1844-4b37-82ed-4638804d4c8a/model_1.png)
+
+It showed following results during training.
+```
+Validation Results (Loss, Acc):
+
+[7.2613, 0.5445]
+```
+
+On a new data, it showed 53.97% Accuracy.
 
 
 ### Version 6 (CNN for Text)
-We Compared the results of following different networks, trained and tested using same data and parameters. The networks are mentioned in ascending order on the basis of their accuracy and genralization.
-* Simple ANN
-* CNN
-* CNN with Word Embeddings
-* CNN with Pre-trained Word Embeddings (GLOVE)
-The results for CNN with Pre-trained Word Embeddings were the best giving over 96% accurate results.
+
+**Motivation**
+ANN clearly performed well. We had done much literature review till this point and the most of the people were using LSTM and CNN for text Classification. We went with CNN, as it is the silver bullet. 
+
+**Description**
+We developed and evaluated three different models. A simple CNN, CNN with Embedding, CNN with Pre-Trained Embedding (GLOVE). Following are the architectures. 
+
+#### CNN with Embedding
+
+![enter image description here](https://ucarecdn.com/8a5879a9-0686-401a-9572-2a33376ab2ff/model_4.png)
+
+#### CNN with Pre-Trained Embedding (GLOVE)
+
+![enter image description here](https://ucarecdn.com/06304a32-036c-4123-ba24-67c24846bae7/model_5.png)
+
+#### Results
+
+The results were very good as compared to simple ANN. All of these models were trained on same data. Following are the evaluation results of these models.  
+```
+3011/3011 [==============================] - 0s 58us/step
+53.97% Accurate ANN
+--------------------------------------------------
+3011/3011 [==============================] - 0s 53us/step
+93.92% Accurate CNN with Embedding
+--------------------------------------------------
+3011/3011 [==============================] - 0s 67us/step
+94.75% Accurate CNN with Embedding and more Filters
+--------------------------------------------------
+3011/3011 [==============================] - 0s 64us/step
+95.78% Accurate CNN with PRe Trained GLOVE Embedding
+```
+
 
 
 ## Contribution
