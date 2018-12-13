@@ -10,7 +10,69 @@ Later, we separated images manually to train the model on data with minimum nois
 We then created a website to label this dataset which we manually created. The aim was to eliminate subjectivity.
 ![enter image description here](https://ucarecdn.com/e0967bef-b95a-49d8-96c1-48f6084e0b54/datalabelwebsite.PNG)
 
-We later find two crisis datasets which were already labeled by humans via [Figure Eight](https://www.figure-eight.com/) (previously known as Crowd Flower). One dataset was used in paper ['Practical Extraction of Disaster-Relevant Information from Social Media'](https://arxiv.org/pdf/1805.00713.pdf) and second in ['Damage Assessment from Social Media Imagery Data During Disasters'](https://mimran.me/papers/Damage_assessment_from_Social_Media_Images.pdf)
+We later found two crisis datasets which were already labeled by humans via [Figure Eight](https://www.figure-eight.com/) (previously known as Crowd Flower). One dataset was used in paper ['Practical Extraction of Disaster-Relevant Information from Social Media'](https://arxiv.org/pdf/1805.00713.pdf) and second in ['Damage Assessment from Social Media Imagery Data During Disasters'](https://mimran.me/papers/Damage_assessment_from_Social_Media_Images.pdf)
+
+#### ASONAM - 3.07 GB of Images & Tweets
+**Description of the dataset**
+
+This corpus comprises images collected from Twitter during four natural disasters, namely Typhoon Ruby (2014), Nepal Earthquake (2015), Ecuador Earthquake (2016), and Hurricane Matthew (2016). In addition to Twitter images, it contains images collected from Google using queries such as "damage building", "damage bridge", and "damage road".
+
+Data format of most of the files is self-explanatory and is organized as follows:
+
+**Typhoon Ruby:**
+Images are stored under the "ruby_typhoon" folder, which contains a total of 833 images.
+"ruby.{train|dev|test}" files list the set of images and their ground-truth damage labels (separated by a space) used for training (500), development (167) and test (166).
+
+**Nepal Earthquake:**
+Images are stored under the "nepal_eq" folder, which contains a total of 19,104 images.
+"nepal.{train|dev|test}" files list the set of images and their ground-truth damage labels (separated by a space) used for training (11,463), development (3,821) and test (3,820).
+
+**Ecuador Earthquake:**
+Images are stored under the "ecuador_eq" folder, which contains a total of 2,280 images.
+"ecuador.{train|dev|test}" files list the set of images and their ground-truth damage labels (separated by a space) used for training (1,368), development (456) and test (456).
+
+**Hurricane Matthew:**
+Images are stored under the "matthew_hurricane" folder, which contains a total of 596 images.
+"matthew.{train|dev|test}" files list the set of images and their ground-truth damage labels (separated by a space) used for training (357), development (120) and test (119).
+
+**Google Images:**
+Images are stored under the "ggImage" folder, which contains a total of 3,007 images.
+"gg.{train|dev|test}" files list the set of images and their ground-truth damage labels (separated by a space) used for training (1,804), development (602) and test (601).
+
+"classes.txt" file contains the mapping between category indices and names, i.e., 
+
+    0 none
+    1 mild
+    2 severe
+
+ 
+ ### Crisis - 2.12 GB of Images & Tweets
+ **Description of the dataset**
+The CrisisMMD multimodal Twitter dataset consists of several thousands of manually annotated tweets and images collected during seven major natural disasters including earthquakes, hurricanes, wildfires, and floods that happened in the year 2017 across different parts of the World. The provided datasets include three types of annotations (for details please refer to our paper [1]): 
+
+**Task 1: Informative vs Not informative**
+   * Informative
+   * Not informative 
+   * Don't know or can't judge
+   
+**Task 2: Humanitarian categories**
+   * Affected individuals
+   * Infrastructure and utility damage
+   * Injured or dead people
+   * Missing or found people
+   * Rescue, volunteering or donation effort
+   * Vehicle damage
+   * Other relevant information
+   * Not relevant or can't judge
+
+**Task 3: Damage severity assessment**
+   * Severe damage
+   * Mild damage
+   * Little or no damage
+   * Don't know or can't judge
+
+
+
 
 ## Brief Overview of Progress
 
