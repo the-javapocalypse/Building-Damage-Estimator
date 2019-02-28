@@ -162,7 +162,8 @@ When we evaluated model on the same unseen data as that for previous model, it s
 
 
 #### Update
-Now our task was to evaluate performance of different architectures. We chose to implement ResNet50. We evaluated the accuracy shown by VGG16 against Resnet and VGG16 dominated with very high accuracy. Following is the architecture of Resnet50
+Now our task was to evaluate performance of different architectures. We chose to implement ResNet50. We evaluated the accuracy shown by VGG16 against Resnet and VGG16 dominated with very high accuracy. Following is the architecture of Resnet50. (Visit the link, Image is too large to attach)
+[Model Architecture Diagram](https://ucarecdn.com/5fb79fb0-3651-49c4-9df9-6eb9dff53205/Fine_Tuned_Resnet.png)
 
 
 ### Version 4 (NLP)
