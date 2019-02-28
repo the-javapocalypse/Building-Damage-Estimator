@@ -1,4 +1,4 @@
-# Building Damage Estimator
+# Building Damage Classifier
 
 
 ## Brief Overview of Data
