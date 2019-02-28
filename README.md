@@ -160,6 +160,11 @@ Validation Results (Loss, Acc):
 
 When we evaluated model on the same unseen data as that for previous model, it showed 100% accuracy. But it was doing Binary Classification.
 
+
+#### Update
+Now our task was to evaluate performance of different architectures. We chose to implement ResNet50. We evaluated the accuracy shown by VGG16 against Resnet and VGG16 dominated with very high accuracy. Following is the architecture of Resnet50
+
+
 ### Version 4 (NLP)
 **Motivation**
 We had a good progress in images but we were lacking in text classification. We decided to get a baseline approach and accuracy for text classification.
