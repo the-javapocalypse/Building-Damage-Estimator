@@ -258,12 +258,19 @@ The results were very good as compared to simple ANN. All of these models were t
 
 
 #### FYP-II Progress
-We have accomplished the following tasks in FYP-II:
+__We have accomplished the following tasks in FYP-II:
+
 * Comparision of different architectures
 * Built a final dataset for the model and to benchmark architectures' performance
 
 
-Remaining Deliverables:
+__In Progress
+
+* Benchmarking models and architectures
+
+
+__Remaining Deliverables:
+
 * Hybrid Model
 * Literature
 
